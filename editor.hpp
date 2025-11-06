@@ -7,5 +7,4 @@ class Editor { // Class declaration to modify binary data
 
     public: 
     static void editByte(std::vector<uint8_t>& data);
- 
 }; 

@@ -3,6 +3,7 @@
 #include <iostream> // Standard input-output stream library
 #include <string> // Allows using the string class to handle user input
 #include <iomanip>
+#include <bitset>
 
 // Allows editing one byte in binary, hex, or character format
 void Editor::editByte(std::vector<uint8_t>& data) { 

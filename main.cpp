@@ -7,8 +7,6 @@
 #include <vector> // Allows the use of the vector class (dynamic array)
 #include <cstdint> // Helps on handling binary data
 
-
-
 // Main function
 int main() {
 
@@ -52,9 +50,6 @@ int main() {
         } else {
             std::cout << "Invalid choice. Please try again.\n"; 
         }
-
     }
-
     return 0; 
-    
 } 

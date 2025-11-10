@@ -22,7 +22,7 @@ The system follows a **modular design** with three main classes:
 ## Installation Instructions
 
 No external installation is required, to use it, simply click on the green button "code" and create a codespace. 
-There, it's possible to test it by creating a file, typing: echo "Anything you want to put on the file" > test.bin
+There, it's possible to test it by creating a file, typing: echo "Anything you want to put on the file" > file_name.bin
 
 ### To compile
 
@@ -36,7 +36,9 @@ Run on the terminal:
 
 ### Usage
 
-When running the program, you’ll a simple menu is shown in the terminal:
+First the program will ask for the file's name and allow to input:
+file_name.bin
+After loading the file and validating if it's not empty, a simple menu is shown in the terminal:
 Menu:
 1. Display file content
 2. Edit a byte

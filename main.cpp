@@ -8,15 +8,18 @@
 #include <cstdint> // Helps on handling binary data
 
 // Main function
-int main() {
+int main(int argc, char* argv[]) { // Accept command line arguments
 
-    std::string filename = "test.bin"; 
+    std::string filename; 
     std::vector<uint8_t> data;
-
-    FileManager::loadFile(filename, data);
-
-    FileManager::saveFile(filename, data);
-
+    
+    if (argc > 1) { 
+        filename = argv[1]; // Get filename from command line argument
+    } else {
+        std::cout << "Enter the file to open: ";
+        std::getline(std::cin, filename);
+    }
+    
     // Load file
     if (!FileManager::loadFile(filename, data)) {
         std::cout << "File not loaded or empty \n";
